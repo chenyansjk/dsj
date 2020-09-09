@@ -13,7 +13,7 @@
 <body>
   <!-- 大事件logo -->
   <div class="layui-main">
-    <img src="/asster/images/logo.png" alt="logo" />
+    <img src="./asster/images/logo.png" alt="logo" />
 
   </div>
   <!-- 登入注册 区域-->
@@ -27,6 +27,7 @@
         <!-- 用户名 -->
         <div class="layui-form-item">
             <i class="layui-icon layui-icon-username"></i>   
+            <!-- 如果需要给layui -->
           <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off"
             class="layui-input">
         </div>
@@ -34,7 +35,7 @@
         
         <div class="layui-form-item">
             <i class="layui-icon layui-icon-password"></i>   
-          <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off"
+          <input type="password" name="password" required lay-verify="required|password" placeholder="请输入密码" autocomplete="off"
             class="layui-input">
         </div>
         <!-- 登入按钮 -->
@@ -66,12 +67,12 @@
         
         <div class="layui-form-item">
             <i class="layui-icon layui-icon-password"></i>   
-          <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off"
+          <input type="password" name="password" required lay-verify="required|password" placeholder="请输入密码" autocomplete="off"
             class="layui-input">
         </div>
         <div class="layui-form-item">
             <i class="layui-icon layui-icon-password"></i>   
-          <input type="password" name="repassword" required lay-verify="required" placeholder="请确认密码" autocomplete="off"
+          <input type="password" name="repassword" required lay-verify="required|password|repassword" placeholder="请确认密码" autocomplete="off"
             class="layui-input">
         </div>
         <!-- 登入按钮 -->
@@ -81,15 +82,18 @@
           <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit >立即提交</button>
         </div>
 
-        <div class="layui-form-time links" >
-            <a href="javascript:;" id="links_login">去登录</a>
+        <div class="layui-form-time links" ><a href="javascript:;" id="links_login">去登录</a>
         </div>
       </form>
 
+
+
+
     </div>
   </div>
-  <script src="/asster/lib/jquery.js"></script>
-  <script src="/asster/js/login.js"></script>
+  <script src="./asster/lib/layui/layui.all.js"></script>
+  <script src="./asster/lib/jquery.js"></script>
+  <script src="./asster/js/login.js"></script>
 </body>
 
 </html>
