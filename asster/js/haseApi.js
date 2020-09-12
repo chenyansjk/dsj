@@ -5,4 +5,12 @@ $.ajaxPrefilter(function (option) {
       Authorization: localStorage.getItem('token') || ''
     }
   }
+  // option.complete = function (res) {
+  //   console.log(res);
+  //   if (res.responseJSON.status===1 && res.responseJSON.message === '身份认证失败') 
+  //    //  强制清空token
+  //   localStorage.removeItem('token')
+  //   // 2. 强制跳转到登录页面
+  //   location.href = '/login.html'
+  //        }
 })
